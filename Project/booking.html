@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palestine Travel Company | Booking</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="../../images/Travel.png" alt="Company Logo" width="150" height="150">
+        <h1>Welcome to Palestine Travel</h1>
+        <hr>
+        <h3>Explore the Culture of Palestine</h3>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="destinations.html">Destinations</a> |
+            <a href="tourpackages.html">Tour Packages</a> |
+            <a href="booking.html">Booking</a> |
+            <a href="about.html">About Us</a> |
+            <a href="gallery.html">Gallery</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <form method="post" action="a.php">
+            <fieldset>
+                <legend>Booking Information :</legend>
+                <section id="Booking">
+                    <label for="name">Full Name :</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="phonenumber">Phone Number :</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" required>
+                    <br>
+                    <br>
+                    <label for="startDate">Start Date :</label>
+                    <input type="date" name="startDate" id="startDate" required>
+
+                    <label for="endDate">End Date :</label>
+                    <input type="date" name="endDate" id="endDate" required>
+                    <br>
+                    <br>
+                    <label for="destinations">Destination :</label>
+                    <select name="destinations" id="destinations" required>
+                        <option value="">Select Destination</option>
+                        <option value="Jerusalem">Jerusalem</option>
+                        <option value="Gaza">Gaza</option>
+                        <option value="Ramallah">Ramallah</option>
+                        <option value="Jericho">Jericho</option>
+                        <option value="Nablus">Nablus</option>
+                    </select>
+
+                    <label for="numberofPeople">Number of People :</label>
+                    <input type="number" min="1" max="12" id="numberofPeople" name="numberofPeople" required />
+
+                    <p>Tour Type :</p>
+                    <input type="radio" id="group" name="tourType" value="Group" checked>
+                    <label for="group">Group Tour</label>
+                    <br>
+                    <input type="radio" id="private" name="tourType" value="Private">
+                    <label for="private">Private Tour</label>
+                    <br>
+                    <input type="radio" id="custom" name="tourType" value="Custom">
+                    <label for="custom">Custom Tour</label>
+
+                    <p>Additional Services :</p>
+                    <input type="checkbox" id="hotel" name="services[]" value="Hotel">
+                    <label for="hotel">Hotel Booking</label>
+                    <input type="checkbox" id="guide" name="services[]" value="Guide">
+                    <label for="guide">Tour Guide</label>
+                    <input type="checkbox" id="transport" name="services[]" value="Transport">
+                    <label for="transport">Transportation</label>
+                    <input type="checkbox" id="meals" name="services[]" value="Meals">
+                    <label for="meals">Meals</label>
+                    <br>
+                    <br>
+                    <label for="requests">Special Requests or Comments:</label><br>
+                    <textarea id="requests" name="requests" rows="7" cols="50"></textarea>
+
+                    <br><br>
+                    <input type="submit" value="Submit Booking">
+                    <input type="reset" value="Reset Form">
+
+                </section>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <section id="About">
+            <h3>Palestine Travel Company</h3>
+            <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elyasnajeh5@gmail.com"
+                    target="_blank">elyasnajeh5@gmail.com</a></p>
+            <p>Phone : +970 569728895</p>
+            <p><small>&copy; 2025 Palestine Travel. All rights reserved.</small></p>
+        </section>
+    </footer>
+</body>
+
+</html>
